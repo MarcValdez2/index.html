@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {box-sizing: border-box}
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+        
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+        
+        .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+        #border {
+        width: 1100px;
+        padding: 15px;
+        background: lightblue;
+        background-clip: border-box;
+        }
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        #color{
+            color: pink;
+            font-size: medium;
+            text-align: center;
+
+        }
+        .img{
+            width: 20px;
+            height: 10px;
+        }
+        .padding{
+            padding-left: 20px;
+            margin: 15px;
+        }  
+        .padding2{
+            padding-left: 20px;
+            margin: 15px;
+            float: right;
+        }  
+        .padding3{
+            padding-left: 20px;
+            margin: 15px;
+            margin-left: 50px;
+        }
+        .name{
+            margin-left: 35px;
+        }
+        #color2{
+            color: red;
+            font-size: medium;
+            text-align: left;
+            margin-left: 195px;
+            top: 110%;
+            position: absolute;
+        }
+        #color3{
+            color: red;
+            float: right;
+            font-size: medium;
+            margin-right: 170px;
+            padding-top: -700px;
+            position: absolute;   
+            top: 110%;
+            right: 25%;
+        }
+        .maps{
+            padding-left: 20px;
+            margin: 15px;
+            float: right;
+        }
+        .location{
+            float: right;
+            margin-right: 170px;
+            padding-top: -700px;
+            position: absolute;   
+            top: 114%;
+            right: 15%;
+        }
+        .gg {
+                color: black;
+                font-size: small;
+                font-style: oblique;
+                text-align: left;
+                background: linear-gradient(to right, #4facfe, #00f2fe);
+                padding: 5px;
+                width: 100%;
+            }
+            
+        .social-media {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .social-media a {
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .line {
+            margin-left: 130px;
+            margin-top: -55px;
+        }
+
+        input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        cursor: pointer;
+        float: right;
+        margin-right: 80px;
+        margin-top: -60px;
+        width: 130px;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-right: 85px;
+            float: right;
+            margin-top: -30px;
+        }
+
+        .search-bar input {
+            width: 90px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .youth {
+            margin-top: 30px;
+        }
+        #color4{
+            color: black;
+            font-size: large;
+        }
+        #color5{
+            color: black;
+            font-size: large;
+            float: right;
+            margin-right: 450px;
+            position: absolute;   
+            top: 159%;
+            right: 25%; 
+        } 
+    </style>
+    </head>
+    <body>
+        <div class="gg"><h1>Corespark</h1></div>
+        <div class="line">
+            <a href="index.html">
+               <img src="fds.jfif" style="width:3%" height="40px">
+            </a>
+        </div>
+        <a href="login2.html">
+        <input type="submit" value="Login">
+        </a>
+           
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <br>
+        <br>
+
+        <div class="center" id="border">
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="sale1.jpg" style="width:100%" height="350px">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="sale2.jpeg" style="width:100%" height="350px">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="sale3.jpeg" style="width:100%" height="350px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="sale4.jpeg" style="width:100%" height="350px">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+        </div>
+            <br>
+            <div class="image-gallery" style="text-align: center; padding: 20px;">
+                <h1>IMAGE GALLERY</h1>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    
+                    <div style="width: 200px; text-align: center;">
+                        <img src="chair.jpeg" alt="Avocahom Lazy Chair" style="width: 100%; border-radius: 10px;">
+                        <h3 style="font-size: 16px; margin: 10px 0;">Avocahom Lazy Chair</h3>
+                        <p style="font-size: 14px; color: #555;">A comfy accent lounge chair with footrest, perfect for living rooms or reading spaces.</p>
+                    </div>
+                    
+                    <div style="width: 200px; text-align: center;">
+                        <img src="bike.jpeg" alt="CERVELO BIKE" style="width: 100%; border-radius: 10px;">
+                        <h3 style="font-size: 16px; margin: 10px 0;">CERVELO BIKE</h3>
+                        <p style="font-size: 14px; color: #555;">With a stiff but comfortable carbon frameset that also has an aerodynamically tuned silhouette.</p>
+                    </div>
+                    
+                    <div style="width: 200px; text-align: center;">
+                        <img src="camera.jpeg" alt="Live System Cameras" style="width: 100%; height: 200px; border-radius: 10px;">
+                        <h3 style="font-size: 16px; margin: 10px 0;">Live System Cameras</h3>
+                        <p style="font-size: 14px; color: #555;">Discover our line-up of live broadcast and studio cameras.</p>
+                    </div>
+                    
+                    <div style="width: 200px; text-align: center;">
+                        <img src="rolex.png" alt="Cosmograph Daytona" style="width: 100%; height: 200px; border-radius: 10px;">
+                        <h3 style="font-size: 16px; margin: 10px 0;">Cosmograph Daytona</h3>
+                        <p style="font-size: 14px; color: #555;">This model features an ice-blue dial with spray-coated counters, <br> 18 ct gold applique hour markers and hands with a Chromalight display, a highly-legible luminescent material.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+        <div class="center" id="border">
+            <h1 id="color2">YOUTUBE</h1>    
+                <iframe width="500" height="345" src="https://www.youtube.com/embed/RmAtgDpWyaU?si=khoCuP-kFLjIEI9-" title="YouTube video player" class="youth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class=""></iframe>
+        </div>
+        <div class="center" id="border">
+            <h1 id="color3">LOCATION</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.1547931430155!2d124.65233567585494!3d8.484325897275356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff3376c0f2cb1%3A0x940a9ac2aee772dd!2sSM%20CDO%20Downtown%20Premier!5e0!3m2!1sen!2sph!4v1731644519880!5m2!1sen!2sph" width="500" height="345" style="border:0;" class="location"></iframe>
+        </div>
+        <br>
+        <div class="center" id="border">
+            <h1 id="color4">Connect with us</h1>
+                <div class="social-media">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+            <h1 id="color5">24/7 Customer Service <br> 
+                <p>Email Address<br>
+                <strong style="font-size: 20px; color: #555;">valdezmarc81@gmail.com</strong></p></h1>   
+                 
+        </div>
+                
+    <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+   </body>
+</html> 

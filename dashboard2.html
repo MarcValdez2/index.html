@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      color: #0073e6;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+      min-width: 200px;
+    }
+    .card {
+      background: #0073e6;
+      color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .card h2 {
+      margin: 10px 0;
+    }
+    .table-container {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #0073e6;
+      color: white;
+    }
+    .ads-breakdown {
+      margin-top: 20px;
+    }
+    .ads-card {
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .sidebar {
+        width: 18%;
+        height: 100%;
+        background-color: #2b3a4a;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        padding: 15px 20px;
+        border-bottom: 1px solid #394a5b;
+        cursor: pointer;
+      }
+      .sidebar ul li:hover {
+        background-color: #3e5062;
+      }
+      .sidebar ul li.active {
+        background-color: #1c89ff;
+      }
+      .content {
+        margin-left: 20%;
+        padding: 20px;
+        background: #fff;
+      }
+ </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerce Dashboard</title>
+    </head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li class="active">Overview</li>
+      <br>
+      <br>
+      <li>Comment</li>
+      <br>
+      <br>
+      <li>Analytics</li>
+      <br>
+      <br>
+      <li>Performance</li>
+      <br>
+      <br>
+      <li>Community</li>
+      <br>
+      <br>
+      <li>Accounting</li>
+      <br>
+      <br>
+      <li>Settings</li>
+      <br>
+      <br>
+      <a href="index.html">
+      <li style="color: white;">Log Out</li>
+      </a>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>Corespark Dashboard</h1>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h2>Total Sales</h2>
+          <p>₱2,835.97</p>
+          <img src="totalsale.png">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h2>Total Refunds</h2>
+          <p>₱104.85</p>
+          <img src="Totalrefunds.png">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h2>Net Sales</h2>
+          <p>₱7,877.20</p>
+          <img src="Totalnetsales.png">
+        </div>
+      </div>
+    </div>
+    <div class="table-container">
+      <h3>Corespark Order Breakdown</h3>
+      <table>
+          <tr>
+            <th>Product</th>
+            <th>Net Quantity</th>
+            <th>Total Sales</th>
+          </tr>
+          <tr>
+            <td>Avocahom Lazy Chair</td>
+            <td>33</td>
+            <td>₱14,842.02</td>
+          </tr>
+          <tr>
+            <td>CERVELO BIKE</td>
+            <td>31</td>
+            <td>₱13,987.64</td>
+          </tr>
+          <tr>
+            <td>Live System Cameras</td>
+            <td>16</td>
+            <td>₱13,202.26</td>
+          </tr>
+          <tr>
+            <td>Cosmograph Daytona</td>
+            <td>12</td>
+            <td>₱13,351.26</td>
+          </tr>
+      </table>
+    </div>
+    <div class="ads-breakdown">
+      <h3>Corespark Advertising Breakdown</h3>
+      <div class="row">
+        <div class="column">
+          <div class="ads-card">
+            <h4>Google Shopping Cost</h4>
+            <p>₱254.00</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ads-card">
+            <h4>FB Ads Cost Per Purchase</h4>
+            <p>₱53.00</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ads-card">
+            <h4>Snapchat Ads Purchases Value</h4>
+            <p>₱40.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
